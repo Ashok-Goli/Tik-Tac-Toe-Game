@@ -55,7 +55,7 @@ function winner(sign){
             player2.style.textShadow = "none"
             document.getElementById("1").innerText = "WINNER"
             document.getElementById("1").style.fontSize = "50px"
-            count = 10
+            count = 3
             var timer = document.getElementById("timer")
             var id = setInterval(function(){
                 if(count<=0){
@@ -66,7 +66,7 @@ function winner(sign){
             },1000)
             setTimeout(function(){
                 location.reload()
-            },11000)
+            },4000)
         }else{
             player2.className = "fa-solid fa-user-graduate"
             player2.style.textShadow = "5px 5px 10px red, -5px -5px 10px red"
@@ -75,7 +75,7 @@ function winner(sign){
             document.getElementById("2").innerText = "WINNER"
             document.getElementById("2").style.fontSize = "50px"
             document.getElementById("2").style.color = "red"
-            count = 10
+            count = 3
             var timer = document.getElementById("timer")
             var id = setInterval(function(){
                 if(count<=0){
@@ -86,7 +86,7 @@ function winner(sign){
             },1000)
             setTimeout(function(){
                 location.reload()
-            },11000)
+            },4000)
         }
     }
 }
